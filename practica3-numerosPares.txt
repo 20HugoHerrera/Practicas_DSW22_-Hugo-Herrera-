@@ -1,0 +1,22 @@
+/**
+ * Crear un lista vacia que permita ingresar
+ * los numeros pares que se encuentren entre al 1 y 100
+ * debera de imprimir el tamaño de la lista
+ * 
+ */
+
+fun main() {
+    
+  
+    val listaPares: MutableList<Int> = mutableListOf()
+
+   
+    for (num in 1..100) {
+        
+        if (num % 2 == 0) {
+            listaPares.add(num) 
+        }
+    }
+    println("Numeros pares entre 1 y 100: $listaPares")
+    println("Tamaño de la lista: ${listaPares.size}")
+}
