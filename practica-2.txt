@@ -1,0 +1,27 @@
+fun main() {
+    // Declaramos un arreglo de 5 notas (tipo Double)
+    val notas = DoubleArray(5)
+
+    // Asignamos valores al arreglo
+    notas[0] = 8.5
+    notas[1] = 7.0
+    notas[2] = 9.2
+    notas[3] = 6.8
+    notas[4] = 10.0
+
+    // Calculamos la suma de todas las notas
+    var suma = 0.0
+    for (nota in notas) {
+        suma += nota
+    }
+
+    // Calculamos el promedio
+    val promedio = suma / notas.size
+
+    // Imprimimos las notas y el promedio
+    println("Notas del estudiante:")
+    for (i in notas.indices) {
+        println("Nota ${i + 1}: ${notas[i]}")
+    }
+
+    prin
